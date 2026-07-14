@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Organic Premium Minimalism Colors */
+  --color-alabaster-base: #FAF9F5;
+  --color-deep-pine: #1E352F;
+  --color-sage-calm: #C4D3CD;
+  --color-therapeutic-terracotta: #CD5C43;
+  --color-mint-accent: #3F9A82;
+
+  --color-primary: #1E352F;
+  --color-on-primary-container: #C4D3CD;
+  --color-secondary: #566E66;
+  --color-background: #FAF9F5;
+  --color-surface-container: #E9E7E0;
+  --color-surface-container-high: #DDDCD4;
+  --color-surface-container-lowest: #F5F4EE;
+  --color-on-surface-variant: #435550;
+  --color-secondary-fixed: #D9EADF;
+
+  /* Shadows */
+  --shadow-soft-zen: 0 10px 40px -10px rgba(30, 53, 47, 0.08);
+  --shadow-ultra-soft: 0 20px 80px -20px rgba(30, 53, 47, 0.12);
+}
+
+/* Base Body Styles */
+body {
+  background-color: var(--color-alabaster-base);
+  color: var(--color-deep-pine);
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+/* Clean Custom Scrollbars to fit the premium look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-container);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage-calm);
+}
+
+.font-display-lg {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.font-display-lg-mobile {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-md {
+  font-family: var(--font-display);
+}

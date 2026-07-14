@@ -1,0 +1,6 @@
+{
+  "name": "Ashwash",
+  "description": "Ashwash is a holistic mental wellness and psychological support platform offering structured learning, professional consultations, dynamic AI assessment, anonymous peer community, and emergency assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
